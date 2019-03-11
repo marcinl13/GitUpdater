@@ -105,7 +105,7 @@ class GitUpdater
     self::LocalData($this->localPath);
 
     if (self::CheckForUpdates() == false) {
-      $this->locData[0]['version'] = intval(join("", explode(".", $this->gitData[0]['tag_name'])));
+      $this->locData[0]['version'] = $this->gitData[0]['tag_name'];
 
       //rewrite json
       $fp = fopen($this->localPath, 'w');
