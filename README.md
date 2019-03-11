@@ -17,7 +17,7 @@ PHP GitUpdater for actualization your own projects. It works on latest version r
   $gitUpdater->GitConnect('Git2', 'marcinl13');
   $gitUpdater->LocalData('info.json');
   $gitUpdater->DownloadFile(DOWNLOAD_PATH);
-  $gitUpdater->UnZip(DOWNLOAD_PATH);
+  $gitUpdater->UnZip(DOWNLOAD_PATH); //extract path!!!
 
   //print errors
   print_r($gitUpdater->ShowErrors());
